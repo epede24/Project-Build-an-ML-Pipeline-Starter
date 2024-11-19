@@ -5,6 +5,9 @@ on the price of similar properties. Your company receives new data in bulk every
 to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
 
 In this project you will build such a pipeline.
+## Link to GitHub Repository and Weights and Biases project: 
+Github repository: https://github.com/epede24/Project-Build-an-ML-Pipeline-Starter 
+W&B project: https://wandb.ai/pedersene113-western-governors-university/nyc_airbnb
 
 ## Table of contents
 
