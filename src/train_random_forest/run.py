@@ -92,6 +92,10 @@ def go(args):
 
     # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
     # HINT: use mlflow.sklearn.save_model
+    # Code to cast object columns as strings, avoiding mlflow object error. Referenced knowledge post: https://knowledge.udacity.com/questions/979798
+    object_cols = X_val.select_dtypes(include=['object']).columns.tolist()
+    X_val[object_cols] = X_val[object_cols].astype(str)
+    
     signature = mlflow.models.infer_signature(X_val, y_pred)
     export_path = "random_forest_dir"
     
